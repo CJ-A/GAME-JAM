@@ -7,6 +7,7 @@ public class EnemyController : MonoBehaviour
 {
     private Transform target;
     public Transform homePos;
+    int damage = 1;
 
     [SerializeField]
     private float speed;

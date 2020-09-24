@@ -7,14 +7,22 @@ public class Shooting : MonoBehaviour
     public Transform firePoint;
     public GameObject bulletPrefab;
 
-    public float bulletForce = 10f;
+    public float coolDownTime = 1f;
+    public float nextFireTime = 0;
+
+    public float bulletForce = 20f;
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (Time.time > nextFireTime)
         {
-            Shoot();
+            if (Input.GetButtonDown("Fire1"))
+            {
+                Shoot();
+                FindObjectOfType<AudioManager>().Play("PlayerShootEffect");
+                nextFireTime = Time.time + coolDownTime;
+            }
         }
     }
 
@@ -25,6 +33,4 @@ public class Shooting : MonoBehaviour
         rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
 
     }
-
-
 }

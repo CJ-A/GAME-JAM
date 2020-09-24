@@ -489,14 +489,14 @@ RectTransform:
   m_GameObject: {fileID: 733203296}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.1115608, y: 1.1115608, z: 1.1115608}
   m_Children: []
   m_Father: {fileID: 154717906}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0015869, y: 79}
+  m_AnchoredPosition: {x: 10, y: 135}
   m_SizeDelta: {x: 1047.875, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &733203298
@@ -521,10 +521,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: f85f56dc3cd54e54bb22757c99cd4c24, type: 3}
-    m_FontSize: 75
+    m_FontSize: 45
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 5
+    m_MinSize: 4
     m_MaxSize: 75
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -532,7 +532,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: You Win!!!
+  m_Text: You defeated Mr. Fences! The floppy disks have returned your memories.
+    You are Harold!
 --- !u!222 &733203299
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -647,14 +648,14 @@ RectTransform:
   m_GameObject: {fileID: 995819855}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.79409987, y: 0.7562856, z: 0.7562856}
   m_Children: []
   m_Father: {fileID: 154717906}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 296, y: -79}
+  m_AnchoredPosition: {x: 314, y: -104}
   m_SizeDelta: {x: 1047.875, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &995819857
@@ -882,7 +883,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 276.2, y: -198.25}
+  m_AnchoredPosition: {x: 335, y: -218}
   m_SizeDelta: {x: 495.39252, y: 176.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1444937392

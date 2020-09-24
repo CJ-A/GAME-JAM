@@ -56,6 +56,10 @@ public class PlayerMovement : MonoBehaviour
             other.gameObject.SetActive(false);
             count = count + 1;
             SetCountText();
+            if (count >= 5)
+            {
+                Destroy(GameObject.FindWithTag("door"));
+            }
         }
     }
 

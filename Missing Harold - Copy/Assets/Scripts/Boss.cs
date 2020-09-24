@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Security.Cryptography;
 using System.Threading;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Boss : MonoBehaviour
 {
@@ -79,6 +80,7 @@ public class Boss : MonoBehaviour
         if (_collision.gameObject.tag == "Bullet")  // collision with game objct
         {
             TakeHit(1);
+            FindObjectOfType<AudioManager>().Play("bosshit");
         }
     }
     public void TakeHit(float damage)
@@ -89,6 +91,7 @@ public class Boss : MonoBehaviour
         if (Hitpoints <= 0)
         {
             Destroy(gameObject);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
    

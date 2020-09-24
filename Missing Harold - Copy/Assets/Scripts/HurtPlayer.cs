@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class HurtPlayer : MonoBehaviour
 {
+    int damage = 1;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,10 +22,9 @@ public class HurtPlayer : MonoBehaviour
     {
         if(other.collider.tag == "Player")
         {
-            //Destroy(other.gameObject);
-            other.gameObject.SetActive(false);
+            Invoke("ResetAttack", .5f);
 
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            
         }
             
 

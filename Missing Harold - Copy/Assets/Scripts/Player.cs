@@ -27,6 +27,7 @@ public class Player : MonoBehaviour
         else if(_collision.gameObject.tag == "Enemy") //collision with enemymicrobot
         {
             TakeDamage(1);
+
         }
     }
 

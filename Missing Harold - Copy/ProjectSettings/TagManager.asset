@@ -11,6 +11,7 @@ TagManager:
   - Projectile
   - Bullet
   - HomePos
+  - door
   layers:
   - Default
   - TransparentFX

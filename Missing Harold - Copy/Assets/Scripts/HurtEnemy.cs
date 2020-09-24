@@ -15,6 +15,7 @@ public class HurtEnemy : MonoBehaviour
         if (_collision.gameObject.tag == "Bullet")  // collision with game objct
         {
             TakeHit(1);
+            FindObjectOfType<AudioManager>().Play("enemyhit");
         }
     }
     public void TakeHit(float damage)
